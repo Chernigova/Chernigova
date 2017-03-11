@@ -1,0 +1,79 @@
+html,
+body{
+	height: 100%;
+}
+
+
+.relative {
+	position: relative;
+	background-color: pink;
+    padding: 15px;
+    top:30px;
+}
+.absolute {
+	position :absolute;
+	top : 50%;
+	left : 50%;
+	border :2px solid red;
+	padding :80px;
+	background-color: yellow;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+.up {
+	z-index : 1;
+}
+
+.purple{
+	background-color :purple;
+	height: 100px;
+}
+.main-menu{
+	list-style: none;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.main-menu li {
+	padding: 15px;
+}
+
+aside{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 30px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	z-index: 2;
+	top: 0;
+	color: white;
+}
+.aside-menu{
+	height: 100%;
+}
+
+
+.wrapper{
+	background:linear-gradient(45deg, #eeeeee, #111111)
+}
+
+aside{
+	background: radial-gradient(#eeeeee, #111111)
+}
+
+.avatar{
+	background-image: url(2.jpg); 
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transition: all 2s;
+}
+.avatar :hover {
+	transform: rotate(250deg) scale(2);
+}
