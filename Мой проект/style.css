@@ -1,24 +1,81 @@
 ﻿
-body{ color: black; 
-	background: white;
-	font: .8em Arial,Helvetica,sans-serif;
-	margin: 0;
-	padding: 0;
+body{
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    font-family: Arial,Helvetica, sans-serif;
+    font:.8em Arial,Helvetica,sans-serif;
+    /*color: #000;*/
+    background: #fff;
+    min-width: 1000px;
+    min-height: 100%;
+    padding: 0;
 }
-.first {background: red; 
+
+ /*Первый блок - красная шапка с меню*/
+.first {
+	background: red; 
 	width: 100%; height: 75px;
 }
-.src { width: 20%; height: 75px; }
-
-.second_centre {
-    margin: 20px;
-    padding: 10px;
+.main-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;}
+li{
+    display: list-item;
 }
-.page_content_title {
+.main-menu-head {
+	text-decoration: none;
+	letter-spacing: 3px;
+	padding: 25px;	
+    color:#ffffff;
+    font-size: 14px; /* Размер шрифта */
+}
 
+
+
+/*Второй блок*/
+.second{
+	display: block;
+}
+.second_centre_up {
+	letter-spacing: 2px;
+	text-align: center;
+    margin: 0 0 40px;
+    padding-top: 65px;
+    color:#000000;
+    font-size: 42px; /* Размер шрифта */
+
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;   
 }
 
 .intro_internship {
     width: 116px;
     height: 116px;
 }
+
+.absolute {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border: 2px solid yellow;
+    padding: 80px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.my-flex-container{
+    display: flex;
+     flex-direction:row;
+}
+
